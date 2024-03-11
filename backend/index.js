@@ -15,15 +15,15 @@ app.use(express.json());
 
 // Middleware for handling CORS POLICY (in terminal <npm i cors>)
 // Option 1: Allow origins with default of cors(*)
-app.use(cors());
+//app.use(cors());
 // OPtion 2: Allow custom Origins
-// app.use(
-//     cors({
-//         origin : "http://localhost:5000/",
-//         methods: ["GET","POST","PUT","DELETE"],
-//         allowHeaders: ["Content-Type"],
-//     })
-// )
+app.use(
+    cors({
+        origin : ["http://localhost:5000/","https://mern-books-store-app.onrender.com"],
+        methods: ["GET","POST","PUT","DELETE"],
+        allowHeaders: ["Content-Type"],
+    })
+)
 
 
 app.get("/",(req,res)=>{
