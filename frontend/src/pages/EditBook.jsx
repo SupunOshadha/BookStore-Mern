@@ -3,7 +3,7 @@ import axios from "axios";
 import BackButton from "../components/BackButton";
 import Spinner from "../components/Spinner";
 import { useNavigate, useParams } from "react-router-dom";
-import  URL  from "../App";
+
 
 const EditBook = () => {
   const [title, setTitle] = useState("");
@@ -14,7 +14,7 @@ const EditBook = () => {
   const {id} = useParams();
   useEffect(()=>{
     setLoading(true);
-    axios.get(`http://localhost:5000/books/${id}`)
+    axios.get(`https://bookstore-mern-l4yt.onrender.com/books/${id}`)
     .then((response)=>{
       setAuthor(response.data.author)
       setPublishYear(response.data.publishYear)
@@ -35,7 +35,7 @@ const EditBook = () => {
     };
     setLoading(true);
     axios
-      .put(`http://localhost:5000/books${id}`, data)
+      .put(`https://bookstore-mern-l4yt.onrender.com/books${id}`, data)
       .then(() => {
         setLoading(false);
         navigate("/");

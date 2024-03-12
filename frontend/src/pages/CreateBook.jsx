@@ -19,7 +19,7 @@ const CreateBook = () => {
     };
     setLoading(true);
     axios
-      .post(`http://localhost:5000/books`, data)
+      .post(`https://bookstore-mern-l4yt.onrender.com/books`, data)
       .then(() => {
         setLoading(false);
         navigate("/");
