@@ -28,7 +28,7 @@ const Home = () => {
   }, [])
 
   return (
-    <div className="p-4 bg-gradient-to-l from-transparent to-gray-800 bg-no-repeat bg-cover w-full h-screen text-white" style={{backgroundImage: `url(${ShopImage})`}}>
+    <div className="p-4 bg-no-repeat bg-cover w-full h-screen text-white" style={{backgroundImage: `linear-gradient(to left, rgba(255,255,255,0), rgba(0,0,0,0.5)),url(${ShopImage})`}}>
       <div className="flex justify-between items-center">
         <h1 className="text-3xl my-8">Books List</h1>
         <Link to="/books/create">
