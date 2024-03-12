@@ -89,8 +89,8 @@ const Home = () => {
         </table>
       )}
       <footer>
-        <div className="w-full h-32 bg-sky-950">
-              <ul className="p-4 inline-block text-white">
+        <div className="w-full h-20 bg-sky-950 m-y-50">
+              <ul className="p-4 inline-block text-white text-center">
                 <li className="text-center">created by @supun-NexNova</li>
               </ul>
         </div>
