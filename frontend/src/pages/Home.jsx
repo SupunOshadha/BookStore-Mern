@@ -88,7 +88,7 @@ const Home = () => {
           </tbody>
         </table>
       )}
-      <footer className="w-full absolute top-20">
+      <footer className="w-full" style={{marginTop: `100px`}}>
         <div className="h-20 bg-sky-950 flex justify-center items-center">
               <ul className="text-white text-center">
                 <li className="text-center">created by @supun-NexNova</li>
