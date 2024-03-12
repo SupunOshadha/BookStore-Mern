@@ -3,7 +3,7 @@ import axios from "axios";
 import BackButton from "../components/BackButton";
 import Spinner from "../components/Spinner";
 import { useNavigate, useParams } from "react-router-dom";
-
+import ShopImage from "../img/shop-img.jpg";
 
 const EditBook = () => {
   const [title, setTitle] = useState("");
@@ -12,7 +12,7 @@ const EditBook = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const {id} = useParams();
-  import ShopImage from "../img/shop-img.jpg";
+  
 
   useEffect(()=>{
     setLoading(true);
