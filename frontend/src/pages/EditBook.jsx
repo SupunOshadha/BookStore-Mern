@@ -13,7 +13,6 @@ const EditBook = () => {
   const navigate = useNavigate();
   const {id} = useParams();
   
-
   useEffect(()=>{
     setLoading(true);
     axios.get(`https://bookstore-mern-l4yt.onrender.com/books/${id}`)
