@@ -25,7 +25,6 @@ app.use(
     })
 )
 
-
 app.get("/",(req,res)=>{
     return res.status(200).send(`<h1 style="text-align:center;">Hello</h1>`)
 })
