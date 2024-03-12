@@ -73,7 +73,7 @@ const Home = () => {
                 <td className="border border-slate-700 rounded-md text-center ">
                   <div className="flex justify-center gap-x-4">
                     <Link to={`/books/details/${book._id}`}>
-                      <BsInfoCircle className="text-2xl text-green-800" />
+                      <BsInfoCircle className="text-2xl text-white" />
                     </Link>
                     <Link to={`/books/edit/${book._id}`}>
                       <AiOutlineEdit className="text-2xl text-yellow-600" />
@@ -88,6 +88,13 @@ const Home = () => {
           </tbody>
         </table>
       )}
+      <footer>
+        <div className="w-full h-32 bg-sky-950">
+              <ul className="p-4 inline-block text-white">
+                <li className="text-center">created by @supun-NexNova</li>
+              </ul>
+        </div>
+      </footer>
     </div>
   );
 };
