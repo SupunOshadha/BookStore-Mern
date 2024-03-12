@@ -14,7 +14,7 @@ const Home = () => {
     setLoading(true);
     axios
       .get(`https://bookstore-mern-l4yt.onrender.com
-      :5000/books`)
+      /books`)
       .then((response) => {
         setBooks(response.data.data);
         console.log("Fetched Books:", response.data);
